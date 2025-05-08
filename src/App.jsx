@@ -2,21 +2,37 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Greetings from './components/greetings'
-import Footer from './components/Footer'
+import Center from './components/Center'
+import Navbar from './components/navbar'
+import Counter from './components/Counter'
+import Form from './components/Form'
+import UserCard from './components/UserCard'
+
 
 function App() {
  
+  const user={
+    name: "Sandra Uddman",
+    email: "s.uddman@gmail.com",
+    country: "Sweden"
+  }
 
   return (
     <>
-    <Greetings/>
+    <Navbar/>
+   
     
-    <div>
+    <div className='welcometext'>
+      
     <h1>Welcome to my react page</h1>
-    <p>here information will updated very cool instant</p>
+    
     </div>
-    <Footer/>
+  <Center/>
+
+  <Counter/>
+  <Form/>
+
+  <UserCard user={user}/>
     
     </>
   )
