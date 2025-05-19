@@ -7,6 +7,9 @@ import Navbar from './components/navbar'
 import Counter from './components/Counter'
 import Form from './components/Form'
 import UserCard from './components/UserCard'
+import FetchData from './components/fetchdata'
+import Window from './components/window'
+import FormValidation from './components/formvalidation'
 
 
 function App() {
@@ -27,12 +30,16 @@ function App() {
     <h1>Welcome to my react page</h1>
     
     </div>
+    <FormValidation/>
   <Center/>
+  <Window/>
 
   <Counter/>
   <Form/>
 
   <UserCard user={user}/>
+
+  <FetchData/>
     
     </>
   )
